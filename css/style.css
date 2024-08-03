@@ -166,6 +166,10 @@ header a:hover{
     padding: 250px 12px;    
 }
 
+#caracteristicas ul{
+    padding-right: 50px;
+}
+
 #caracteristicas li{
     margin: 16px 0px;
     font-weight: bold;
