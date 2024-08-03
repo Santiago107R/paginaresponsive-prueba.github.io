@@ -1,0 +1,312 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+h1{ font-size: 3.5em;}
+h2{ font-size: 2.7em;}
+h3{ font-size: 2em;}
+p{ font-size: 1.25em;}
+ul{ list-style: none;}
+li{ font-size: 1.5em;}
+
+button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: 2px solid rgba(0,0,0,0.5);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: white;
+    background-color: palevioletred;
+}
+
+button:hover{
+    background-color: rgb(197, 110, 139);
+}
+
+.container{
+    max-width: 1000px;
+    margin: auto;
+}
+
+.color-titulos{ color: palevioletred;}
+
+header{
+    background-color: rgb(235, 235, 235);
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: palevioletred;
+    font-size: 1.6em;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    color: palevioletred;
+}
+
+#hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.75),
+        rgba(0,0,0,0.75)
+    )
+    ,url(../img/imghero2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero h1{
+    color: white;
+}
+
+#hero button{
+    font-size: 1.75em;
+}
+
+#somos-comprayventa .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#acerca-productos{
+    background-color: rgb(30,30,30);
+    color: white;
+    text-align: center;
+}
+
+#acerca-productos .container{
+    padding: 150px 12px;
+}
+
+#acerca-productos h2{
+    margin-top: 0;
+    font-size: 3.2em;
+}
+
+#acerca-productos p{
+    display: none;
+}
+
+#acerca-productos .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.65),
+        rgba(0,0,0,0.65)
+    )
+    ,url(../img/imgjuegos.jpg);
+}
+
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.65),
+        rgba(0,0,0,0.65)
+    )
+    ,url(../img/imgconsolas.jpg);
+}
+
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.65),
+        rgba(0,0,0,0.65)
+    )
+    ,url(../img/imgropa.jpg);
+}
+
+#caracteristicas .container{
+    text-align: center;
+    padding: 250px 12px;    
+}
+
+#caracteristicas li{
+    margin: 16px 0px;
+    font-weight: bold;
+}
+
+#caracteristicas li .tick{ color: green;}
+
+#fin{
+    background-color: rgb(30,30,30);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 80vh;
+    color: white;
+}
+
+#fin h2{
+    font-size: 6vh;
+}
+
+#fin button{
+    font-size: 3vh;
+}
+
+footer{
+    background-color: rgb(230,230,230);
+}
+
+footer p{
+    margin: 0;
+    padding: 12px;
+    color: rgb(100,100,100);
+}
+footer .container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+@media (min-width: 720px) {
+    header{
+        position: fixed;
+        width: 100%;
+    }
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0px;
+        padding-right: 20px;
+    }
+
+    #hero h1{
+        font-size: 5em;
+    }
+
+    #somos-comprayventa .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #somos-comprayventa .text{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding: 0px 30px;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #somos-comprayventa h2{
+        margin-top: 0px;
+    }
+
+    #somos-comprayventa .img-container{
+        background-image: url(../img/imgicon1.jpg);
+        background-size: cover;
+        background-position: center center;
+        height: 400px;
+        width: 300px;
+    }
+
+    #acerca-productos .productos{
+        display: flex;
+        justify-content: center;
+    }
+
+    #acerca-productos p{
+        display: block;
+        padding-bottom: 30px;
+    }
+
+    #acerca-productos h3{
+        margin-top: 0px;
+    }
+
+    #acerca-productos .carta {
+        padding: 15px;
+    }
+
+    #caracteristicas{
+        background-image: url(../img/imgicon2.png);
+        background-repeat: no-repeat;
+
+        background-size: 300px 300px;
+        background-position: calc(100vw - 300px) 180px;
+    }
+
+    #caracteristias .container{
+       
+    }
+
+    #caracteristicas ul{
+        margin-left: 100px;
+        text-align: initial;
+    }
+
+    #fin h2{
+        font-size: 4em;
+    }
+
+    #fin button{
+        font-size: 2em;
+    }
+
+    footer .container{
+        justify-content: flex-end;
+    }
+
+}
+
+@media (min-width: 1000px) {
+    #caracteristicas{
+        background-position-x: calc(100vw - 400px);
+    }
+}
